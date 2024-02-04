@@ -1,0 +1,126 @@
+@media (max-width: 575px) and (orientation: portrait) {
+  .wrapper-of-content {
+    width: 540px;
+  }
+}
+
+@media (max-width: 410px) and (orientation: portrait) {
+  .wrapper-of-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-of-content {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+.sidebar-content {
+  max-width: 500px;
+  background: #d6d0cb;
+  border-right: 5px solid #226b34;
+}
+.container-content {
+  background: #598564;
+  width: 100%;
+}
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background: #d9c468;
+  border-radius: 0 0 150px 150px;
+  margin-bottom: 20px;
+}
+.profile__name {
+  letter-spacing: 2px;
+  line-height: 40px;
+  font-size: 28px;
+  text-align: center;
+}
+.profile__img {
+  height: 200px;
+  border-radius: 50%;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  overflow: hidden;
+  transform: scale(0.8);
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.personal-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+.container-interests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.container-interests__list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.container-content {
+  padding: 30px;
+}
+.quote {
+  padding: 10px;
+}
+.main-title {
+  text-align: center;
+}
+.main-text {
+  margin-bottom: 20px;
+}
+.project-links {
+  text-align: start;
+  margin-bottom: 20px;
+}
+.project-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+/* .project-list__item {
+  list-style-type: none;
+} */
+a {
+  text-decoration: none;
+  color: black;
+}
+.education-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.courses-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
